@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js --exec babel-node"
+    "start": "nodemon src/index.js --exec babel-node",
+    "test": "mocha --config src/test/.mocharc.yml",
+    "posttest": "standard --fix"
   },
   "keywords": [],
   "author": "",
