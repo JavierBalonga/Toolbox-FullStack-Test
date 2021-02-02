@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js --exec babel-node"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +13,15 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
     "chai": "^4.2.0",
     "mocha": "^8.2.1",
+    "nodemon": "^2.0.7",
+    "standard": "^16.0.3",
     "supertest": "^6.1.3"
   }
 }
