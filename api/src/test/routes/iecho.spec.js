@@ -32,4 +32,27 @@ describe('GET /iecho?text=String!', () => {
           error: 'no text'
         })
       }))
+
+  // eslint-disable-next-line no-undef
+  it('should give a 400 response in case text was empty', () =>
+    server
+      .get('/iecho?text=')
+      .expect(400)
+      .expect('Content-Type', /json/)
+      .then(({ body }) => {
+        expect(body).to.be.deep.equal({
+          error: 'no text'
+        })
+      }))
+
+  // eslint-disable-next-line no-undef
+  it('should indicate by the "palindrome" flag if the sent text is a palindrome', () =>
+    server
+      .get('/iecho?text=sometemos')
+      .expect(200)
+      .expect('Content-Type', /json/)
+      .then(({ body }) => {
+        expect(body).to.have.property('palindrome')
+        expect(body.palindrome).to.be.equal(true)
+      }))
 })
