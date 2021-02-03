@@ -6,8 +6,8 @@
 - Clonar el repositorio: `git clone https://github.com/JavierBalonga/Toolbox-FullStack-Test.git`
 - Desde la raiz (Toolbox-FullStack-Test) ejecutar los siguientes comandos:
 ```
-cd client/
-npm start
+cd api/
+npm run dev
 ```
 #### Otros scripts:
 - `npm test` para correr los test y luego correr standardjs
@@ -18,7 +18,7 @@ npm start
 - Clonar el repositorio: `git clone https://github.com/JavierBalonga/Toolbox-FullStack-Test.git`
 - Desde la raiz (Toolbox-FullStack-Test) ejecutar los siguientes comandos:
 ```
-cd api/
+cd client/
 npm start
 ```
 #### Otros scripts:
