@@ -8,3 +8,8 @@ export function addResult (text) {
     })
   }
 }
+
+export const DELETE_RESULT = 'DELETE_RESULT'
+export function deleteResult (id) {
+  return { type: DELETE_RESULT, payload: id }
+}

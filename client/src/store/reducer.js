@@ -1,4 +1,4 @@
-import { ADD_RESULT } from './actionCreators'
+import { ADD_RESULT, DELETE_RESULT } from './actionCreators'
 
 const initialState = {
   results: [],
@@ -12,6 +12,11 @@ export default function reducer (state = initialState, { type, payload }) {
         ...state,
         results: state.results.concat({ ...payload, id: state.resultsId }),
         resultsId: state.resultsId + 1
+      }
+    case DELETE_RESULT:
+      return {
+        ...state,
+        results: state.results.filter((result) => result.id !== payload)
       }
     default:
       return state
