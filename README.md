@@ -7,6 +7,7 @@
 - Desde la raiz (Toolbox-FullStack-Test) ejecutar los siguientes comandos:
 ```
 cd api/
+npm install
 npm run dev
 ```
 #### Otros scripts:
@@ -19,6 +20,7 @@ npm run dev
 - Desde la raiz (Toolbox-FullStack-Test) ejecutar los siguientes comandos:
 ```
 cd client/
+npm install
 npm start
 ```
 #### Otros scripts:
