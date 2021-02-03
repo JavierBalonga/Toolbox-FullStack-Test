@@ -1,5 +1,5 @@
 import axios from 'axios'
-const { get } = axios.create()
+const { get } = axios.create({ baseURL: 'http://localhost:3001/' })
 
 function errorHandler (err) {
   console.error(err)
@@ -9,5 +9,4 @@ function errorHandler (err) {
     Message: ${err.response.data.error}`)
 }
 
-export const iecho = (text) =>
-  get(`http://localhost:3001/iecho?text=${text}`).catch(errorHandler)
+export const iecho = (text) => get(`iecho?text=${text}`).catch(errorHandler)
