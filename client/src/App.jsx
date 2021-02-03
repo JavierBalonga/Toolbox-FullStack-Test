@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from './components/Header'
+import Home from './containers/Home.jsx'
 
 export default function App () {
-  const onSubmit= (text) => alert(text)
-  return <Header onSubmit={onSubmit} />
+  return <Home />
 }
